@@ -2,7 +2,7 @@
 
 INSTALL_DIR=`pwd`
 cd $HOME
-ln -s $INSTALL_DIR/.bash_aliases .bash_aliases
-ln -s $INSTALL_DIR/.bashrc .bashrc
-ln -s $INSTALL_DIR/.vimrc .vimr
-ln -s $INSTALL_DIR/.xinitrc .xinitrc
+ln -sf $INSTALL_DIR/.bash_aliases .bash_aliases
+ln -sf $INSTALL_DIR/.bashrc .bashrc
+ln -sf $INSTALL_DIR/.vimrc .vimr
+ln -sf $INSTALL_DIR/.xinitrc .xinitrc
