@@ -118,14 +118,11 @@ if ! shopt -oq posix; then
 fi
 
 # Folder aliases
-alias vektor='cd ~/Developer/vektorprogrammet'
-alias green='cd ~/Developer/greenstock'
-alias www='cd /var/www/html'
-alias eksamen='cd ~/Developer/python/eksamensperiode'
-alias nvd='cd ~/Developer/nvd-new'
+alias vektor='cd ~/dev/vektorprogrammet'
+alias green='cd ~/dev/greenstock'
 
 # Other aliases
-alias db='sqlite3 -column -header ~/Developer/vektorprogrammet/var/data/dev.db'
+alias db='sqlite3 -column -header ~/dev/vektorprogrammet/var/data/dev.db'
 alias tellme='notify-send done'
 alias dbrel='npm run -s db:reload'
 alias vpn='ssh -D 12345 -C ntnu'
@@ -152,22 +149,16 @@ function xelatexoving() {
     fi
 }
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /home/sigtot/Developer/node_modules/tabtab/.completions/serverless.bash ] && . /home/sigtot/Developer/node_modules/tabtab/.completions/serverless.bash
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /home/sigtot/Developer/node_modules/tabtab/.completions/sls.bash ] && . /home/sigtot/Developer/node_modules/tabtab/.completions/sls.bash
 force_colored_prompt=yes
 
 export GOROOT=/usr/lib/go
-export GOPATH=$HOME/Developer/go
+export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export MYGIT=https://github.com/sigtot
 
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
-[ -f /home/sigtot/Developer/node_modules/tabtab/.completions/slss.bash ] && . /home/sigtot/Developer/node_modules/tabtab/.completions/slss.bash
+[ -f /home/sigtot/dev/node_modules/tabtab/.completions/slss.bash ] && . /home/sigtot/dev/node_modules/tabtab/.completions/slss.bash
 
 # Set default editor to vim
 export VISUAL=vim
@@ -180,3 +171,4 @@ export ANDROID_NDK_PATH=$HOME/Android/Sdk/android-ndk
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+export PATH="/usr/local/MATLAB/R2019b/bin:$PATH"
