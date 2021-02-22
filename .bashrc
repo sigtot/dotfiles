@@ -173,3 +173,4 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export PATH="/usr/local/MATLAB/R2019b/bin:$PATH"
 source /opt/ros/melodic/setup.bash
+export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
