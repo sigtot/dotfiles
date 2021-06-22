@@ -1,5 +1,6 @@
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set relativenumber nu
+set backspace=indent,eol,start " Allow backspacing auto-inserted stuff
 highlight LineNr ctermfg=darkgrey
 
 let mapleader =","
