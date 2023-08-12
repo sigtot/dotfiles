@@ -151,9 +151,7 @@ function xelatexoving() {
 
 force_colored_prompt=yes
 
-export GOROOT=/usr/lib/go
-export GOPATH=$HOME/dev/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
 export MYGIT=https://github.com/sigtot
 
 # tabtab source for slss package
