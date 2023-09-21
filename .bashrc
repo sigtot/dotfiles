@@ -152,6 +152,7 @@ function xelatexoving() {
 force_colored_prompt=yes
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/sigtot/go/bin
 export MYGIT=https://github.com/sigtot
 
 # tabtab source for slss package
@@ -162,10 +163,6 @@ export MYGIT=https://github.com/sigtot
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export _JAVA_AWT_WM_NONREPARENTING=1
-export ANDROID_HOME=~/Android/Android/Sdk
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export ANDROID_SDK_PATH=$HOME/Android/Sdk
-export ANDROID_NDK_PATH=$HOME/Android/Sdk/android-ndk
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -174,3 +171,5 @@ source /opt/ros/melodic/setup.bash
 export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
 
 export LD_LIBRARY_PATH=/opt/qt514/lib/:$LD_LIBRAR_PATH
+
+alias kubectl="minikube kubectl --"
