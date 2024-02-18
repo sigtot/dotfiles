@@ -173,3 +173,9 @@ export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/opt/qt514/lib/:$LD_LIBRAR_PATH
 
 alias kubectl="minikube kubectl --"
+
+export PATH="/home/sigtot/tools/lua-language-server/bin:$PATH"
+export PATH="/home/sigtot/tools/ripgrep:$PATH"
+export MANPATH=$HOME/tools/ripgrep/doc/man:$MANPATH
+export PATH="/home/sigtot/tools/ctags/bin:$PATH"
+export PATH="/home/sigtot/tools/nvim/bin:$PATH"
